@@ -102,3 +102,17 @@ Every match teaches something.
 
 "Football changes.
 The Engine evolves with it."
+
+### 4. Architecture
+
+**Rule #1 - Architecture**
+
+The memory of the project lives in the repository, not in conversations.
+
+Conversations are for creating ideas.
+
+The repository is for preserving them.
+
+**Regla #2 – Ontological Minimalism**
+
+The Football Ontology shall model only concepts that contribute to football reasoning.

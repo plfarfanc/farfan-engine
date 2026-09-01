@@ -1,7 +1,5 @@
 # Purpose
 
-# Purpose
-
 The Ubiquitous Language defines the official vocabulary of the FARFAN Engine.
 
 Every architectural decision, document and software component must use these terms consistently.

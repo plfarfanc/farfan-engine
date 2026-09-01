@@ -46,15 +46,18 @@ Without competitions, football matches lose competitive meaning.
 
 Competition
 
-↓
+|
+v
 
 Tournament Edition
 
-↓
+|
+v
 
 Stages
 
-↓
+|
+v
 
 Matches
 
@@ -64,15 +67,18 @@ Matches
 
 Created
 
-↓
+|
+v
 
 Active
 
-↓
+|
+v
 
 Produces Tournament Editions
 
-↓
+|
+v
 
 Continues
 

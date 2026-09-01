@@ -55,14 +55,14 @@ The football universe is composed of seven conceptual domains.
 
 ```
 Football Universe
-│
-├── Competitions
-├── Organizations
-├── People
-├── Matches
-├── Context
-├── Knowledge
-└── Learning
+|
+|-- Competitions
+|-- Organizations
+|-- People
+|-- Matches
+|-- Context
+|-- Knowledge
+`-- Learning
 ```
 
 ---
@@ -248,7 +248,7 @@ It is complemented by:
 - ENTITY_CATALOG.md
 - RELATIONSHIPS.md
 - DOMAIN_MODEL.md
-- KNOWLEDGE_MODEL.md
+- KNOWLEDGE_MODEL.md (planned)
 
 ---
 

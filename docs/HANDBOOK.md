@@ -7,7 +7,7 @@ Version: 0.1 (Draft)
 Status: In Progress
 
 Authors:
-- Pedro Farfán
+- Pedro Farfan
 - ChatGPT
 
 Last Updated:
@@ -82,7 +82,7 @@ It is
 "The Engine is not built to know everything.
 It is built to learn forever."
 
-### 3.Philosophy
+### 2. Philosophy
 
 **Principle 1**
 Football is too complex to be explained by a single variable.
@@ -113,6 +113,6 @@ Conversations are for creating ideas.
 
 The repository is for preserving them.
 
-**Regla #2 – Ontological Minimalism**
+**Rule #2 - Ontological Minimalism**
 
 The Football Ontology shall model only concepts that contribute to football reasoning.

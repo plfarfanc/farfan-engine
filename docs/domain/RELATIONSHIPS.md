@@ -1,7 +1,27 @@
 # Relationships
 
-**Status:** Placeholder
+**Status:** In Progress
 
 This document is part of the planned FARFAN Engine architecture.
 
-It will describe approved relationships between domain concepts as the model evolves.
+## Initial Domain Slice
+
+Competition
+
+|
+v
+
+Tournament Edition
+
+|
+v
+
+Stage
+
+## Approved Relationships
+
+- A Competition contains Tournament Editions.
+- A Tournament Edition belongs to exactly one Competition.
+- A Tournament Edition contains Stages.
+- Stage belongs to a specific Tournament Edition.
+- Stage is not modeled directly as a child of Competition.

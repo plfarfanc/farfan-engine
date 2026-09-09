@@ -123,3 +123,85 @@ Potential ADR:
 
 ADR-0002
 
+---
+
+# Tournament Edition
+
+## Purpose
+
+Represents a specific edition of a Competition.
+
+---
+
+## Definition
+
+A Tournament Edition is a specific edition of a Competition.
+
+---
+
+## Relationships
+
+Competition
+
+|
+v
+
+Tournament Edition
+
+|
+v
+
+Stage
+
+---
+
+## Design Principles
+
+- A Tournament Edition belongs to exactly one Competition.
+
+- A Tournament Edition contains Stages.
+
+---
+
+## Classification
+
+Core Entity
+
+---
+
+# Stage
+
+## Purpose
+
+Represents a competitive phase within a Tournament Edition.
+
+---
+
+## Definition
+
+Stage represents a competitive phase within a Tournament Edition.
+
+---
+
+## Relationships
+
+Tournament Edition
+
+|
+v
+
+Stage
+
+---
+
+## Design Principles
+
+- Stage belongs to a specific Tournament Edition.
+
+- Stage is not modeled directly as a child of Competition.
+
+---
+
+## Classification
+
+Core Entity

@@ -22,6 +22,7 @@ Its objective is to establish a common language shared by domain experts, develo
 | ------------------ | ------------------------------------------- | -------- |
 | Competition        | An organized football competition.          | Approved |
 | Tournament Edition | A specific edition of a Competition.        | Approved |
+| Stage              | A competitive phase within a Tournament Edition. | Approved |
 | Match              | A football event played between two Teams.  | Approved |
 | Team               | An organized football collective.           | Approved |
 | Player             | A football participant belonging to a Team. | Approved |

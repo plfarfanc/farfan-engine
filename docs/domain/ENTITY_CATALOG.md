@@ -90,6 +90,8 @@ Continues
 
 - A Tournament Edition belongs to exactly one Competition.
 
+- A Competition is not directly related to Match.
+
 - Competitions are immutable historical concepts.
 
 - Competition identity is independent from its editions.
@@ -117,7 +119,7 @@ Status: Pending Architectural Decision
 
 Question:
 
-Should Friendly Matches belong to a Competition?
+How should Friendly Matches relate to Competition, Tournament Edition, and Stage?
 
 Potential ADR:
 
@@ -161,6 +163,8 @@ Stage
 
 - A Tournament Edition contains Stages.
 
+- A Tournament Edition is not directly related to Match.
+
 ---
 
 ## Classification
@@ -192,11 +196,18 @@ v
 
 Stage
 
+|
+v
+
+Matches
+
 ---
 
 ## Design Principles
 
 - Stage belongs to a specific Tournament Edition.
+
+- Stage contains multiple Matches.
 
 - Stage is not modeled directly as a child of Competition.
 
@@ -205,3 +216,97 @@ Stage
 ## Classification
 
 Core Entity
+
+---
+
+# Match
+
+## Purpose
+
+Represents a football event played between two Teams.
+
+---
+
+## Definition
+
+A Match is a football event played between two Teams.
+
+---
+
+## Identity
+
+Match has its own domain identity represented conceptually as MatchId.
+
+MatchId identifies one specific Match.
+
+Match identity is not derived from date/time, Teams, or any other attribute.
+
+The source of MatchId is not decided yet.
+
+---
+
+## Relationships
+
+Stage
+
+|
+v
+
+Match
+
+Match
+
+|
+v
+
+Home Team
+
+Match
+
+|
+v
+
+Away Team
+
+---
+
+## Properties
+
+- Match has a date/time property.
+- Date/time is not part of Match identity.
+
+---
+
+## Design Principles
+
+- A Match belongs to one Stage.
+
+- A Match is played between exactly two Teams.
+
+- The two participants are represented as Home Team and Away Team.
+
+- Match is not directly related to Competition.
+
+- Do not introduce a separate participant-role abstraction for Match v1.
+
+---
+
+## Classification
+
+Core Entity
+
+---
+
+## Deferred from Match v1
+
+- Score / Result
+- Match Status
+- Stadium / Venue
+- Neutral Venue
+- Match Events
+- Weather
+- Other Context
+- Friendly Match modeling
+- Aggregate scores
+- Penalty shootouts
+- Postponed/abandoned match behavior

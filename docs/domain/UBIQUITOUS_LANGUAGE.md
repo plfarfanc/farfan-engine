@@ -27,6 +27,15 @@ Its objective is to establish a common language shared by domain experts, develo
 | Team               | An organized football collective.           | Approved |
 | Player             | A football participant belonging to a Team. | Approved |
 
+# Match Vocabulary
+
+| Term      | Definition                                      | Status   |
+| --------- | ----------------------------------------------- | -------- |
+| MatchId   | The domain identity concept for one Match.      | Approved |
+| Home Team | One of the two Teams that play a Match.         | Approved |
+| Away Team | One of the two Teams that play a Match.         | Approved |
+| Date/time | A Match property that is not part of identity.  | Approved |
+
 
 # Naming Rules
 

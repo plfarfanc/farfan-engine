@@ -12,6 +12,7 @@ The currently approved domain slice contains:
 - Tournament Edition
 - Stage
 - Match
+- Team
 
 ## Approved Relationship Chain
 
@@ -57,6 +58,26 @@ Match has a date/time property.
 
 Date/time is not part of Match identity.
 
+## Team v1
+
+Team is a Core Entity.
+
+Team has its own domain identity represented conceptually as TeamId.
+
+TeamId identifies one specific Team.
+
+Team has the following properties:
+
+- Name
+- Country
+
+Team participates in Matches.
+
+Match references exactly two Teams:
+
+- Home Team
+- Away Team
+
 ## Implementation Baseline
 
 - Java
@@ -66,6 +87,6 @@ Date/time is not part of Match identity.
 
 ## Scope Boundaries
 
-The current domain model does not include Score / Result, Match Status, Stadium / Venue, Neutral Venue, Match Events, Weather, Other Context, Friendly Match modeling, aggregate scores, penalty shootouts, postponed or abandoned match behavior, Player, Coach, Referee, Knowledge, Reasoning, Learning, persistence, APIs, or infrastructure.
+The current domain model does not include Score / Result, Match Status, Stadium / Venue, Neutral Venue, Match Events, Weather, Other Context, Friendly Match modeling, aggregate scores, penalty shootouts, postponed or abandoned match behavior, Players, Coach, Staff, Squad, Tactical Identity, Technical Profile, Psychological Profile, Current Form, Team History, Club vs National Team classification, Competition participation details, Team statistics, Advanced Team concepts, Referee, Knowledge, Reasoning, Learning, persistence, APIs, or infrastructure.
 
 Friendly Match relationships with Competition, Tournament Edition, and Stage remain open domain decisions.

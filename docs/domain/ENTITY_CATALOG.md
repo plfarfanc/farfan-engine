@@ -310,3 +310,91 @@ Core Entity
 - Aggregate scores
 - Penalty shootouts
 - Postponed/abandoned match behavior
+
+---
+
+# Team
+
+## Purpose
+
+Represents an organized football collective.
+
+---
+
+## Definition
+
+A Team is an organized football collective.
+
+---
+
+## Identity
+
+Team has its own domain identity represented conceptually as TeamId.
+
+TeamId identifies one specific Team.
+
+---
+
+## Relationships
+
+Team
+
+|
+v
+
+Matches
+
+Match
+
+|
+v
+
+Home Team
+
+Match
+
+|
+v
+
+Away Team
+
+---
+
+## Properties
+
+- Name
+- Country
+
+---
+
+## Design Principles
+
+- Team participates in Matches.
+
+- Match references exactly two Teams.
+
+- The two Match Team references are represented as Home Team and Away Team.
+
+---
+
+## Classification
+
+Core Entity
+
+---
+
+## Deferred from Team v1
+
+- Players
+- Coach
+- Staff
+- Squad
+- Tactical Identity
+- Technical Profile
+- Psychological Profile
+- Current Form
+- Team History
+- Club vs National Team classification
+- Competition participation details
+- Team statistics
+- Advanced Team concepts

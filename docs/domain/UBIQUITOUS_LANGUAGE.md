@@ -36,6 +36,14 @@ Its objective is to establish a common language shared by domain experts, develo
 | Away Team | One of the two Teams that play a Match.         | Approved |
 | Date/time | A Match property that is not part of identity.  | Approved |
 
+# Team Vocabulary
+
+| Term    | Definition                                 | Status   |
+| ------- | ------------------------------------------ | -------- |
+| TeamId  | The domain identity concept for one Team.  | Approved |
+| Name    | A Team property.                           | Approved |
+| Country | A Team property.                           | Approved |
+
 
 # Naming Rules
 

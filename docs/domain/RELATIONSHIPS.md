@@ -36,6 +36,8 @@ Match
 - A Match is played between exactly two Teams.
 - A Match has a Home Team.
 - A Match has an Away Team.
+- A Team participates in Matches.
+- A Match references exactly two Teams.
 
 ## Match Identity and Properties
 
@@ -44,3 +46,10 @@ Match
 - Match identity is not derived from date/time, Teams, or any other attribute.
 - Match has a date/time property.
 - Date/time is not part of Match identity.
+
+## Team Identity and Properties
+
+- Team has its own domain identity represented conceptually as TeamId.
+- TeamId identifies one specific Team.
+- Team has a Name property.
+- Team has a Country property.

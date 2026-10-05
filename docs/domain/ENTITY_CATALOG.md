@@ -279,7 +279,9 @@ Away Team
 
 ## Design Principles
 
-- A Match belongs to one Stage.
+- A Match belongs to exactly one Stage.
+
+- A Stage contains multiple Matches.
 
 - A Match is played between exactly two Teams.
 

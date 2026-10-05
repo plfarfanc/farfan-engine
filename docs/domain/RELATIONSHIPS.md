@@ -30,7 +30,7 @@ Match
 - A Tournament Edition contains Stages.
 - Stage belongs to a specific Tournament Edition.
 - A Stage contains multiple Matches.
-- A Match belongs to one Stage.
+- A Match belongs to exactly one Stage.
 - Stage is not modeled directly as a child of Competition.
 - Match is not directly related to Competition.
 - A Match is played between exactly two Teams.
@@ -44,8 +44,13 @@ Match
 - Match has its own domain identity represented conceptually as MatchId.
 - MatchId identifies one specific Match.
 - Match identity is not derived from date/time, Teams, or any other attribute.
+- The source of MatchId is not decided yet.
 - Match has a date/time property.
 - Date/time is not part of Match identity.
+
+## Open Domain Decisions
+
+- Friendly Match relationships with Competition, Tournament Edition, and Stage remain open.
 
 ## Team Identity and Properties
 

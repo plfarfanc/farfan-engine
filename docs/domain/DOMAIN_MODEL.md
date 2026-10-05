@@ -45,7 +45,9 @@ MatchId identifies one specific Match.
 
 Match identity is not derived from date/time, Teams, or any other attribute.
 
-A Match belongs to one Stage.
+The source of MatchId is not decided yet.
+
+A Match belongs to exactly one Stage.
 
 A Stage contains multiple Matches.
 
